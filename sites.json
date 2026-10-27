@@ -5,7 +5,8 @@
   //   "url": "https://kartdavat.com",
   //   "category": { "fa": "مراسم و دعوت", "en": "Events & invitations" },
   //   "note": { "fa": "دعوت‌نامه دیجیتال فارسی", "en": "Farsi digital invitations" },
-  //   "approved": false
+  //   "approved": false,
+  //   "todo": false
   // },
   {
     "id": "InvCard",
@@ -13,7 +14,8 @@
     "url": "https://invcard.com",
     "category": { "fa": "مراسم و دعوت", "en": "Events & invitations" },
     "note": { "fa": "دعوت‌نامه دیجیتال فارسی", "en": "Farsi digital invitations" },
-    "approved": true
+    "approved": true,
+    "todo": false
   },
   {
     "id": "Coden",
@@ -21,7 +23,8 @@
     "url": "https://coden.ir",
     "category": { "fa": "ابزار برنامه‌نویسی", "en": "Dev tools"  },
     "note": { "fa": "ذخیره‌سازی و اشتراک‌گذاری کد", "en": "Code storage and sharing" },
-    "approved": true
+    "approved": true,
+    "todo": false
   },
   {
     "id": "foodplan",
@@ -29,7 +32,8 @@
     "url": "https://foodplanapp.com",
     "category": { "fa": "خانه و خانواده", "en": "Home & family" },
     "note": { "fa": "برنامه‌ریزی غذا و خرید خانواده", "en": "Family meal and shopping planner" },
-    "approved": true
+    "approved": true,
+    "todo": false
   },
   {
     "id": "codesandbox",
@@ -37,7 +41,8 @@
     "url": "https://codesandbox.io",
     "category": { "fa": "ابزار برنامه‌نویسی", "en": "Dev tools" },
     "note": { "fa": "محیط کدنویسی آنلاین در مرورگر", "en": "Online code editor and sandboxes in the browser" },
-    "approved": true
+    "approved": true,
+    "todo": false
   },
   {
     "id": "codepen",
@@ -45,7 +50,8 @@
     "url": "https://codepen.io",
     "category": { "fa": "ابزار برنامه‌نویسی", "en": "Dev tools" },
     "note": { "fa": "زمین بازی HTML، CSS و JS", "en": "HTML, CSS and JS playground" },
-    "approved": true
+    "approved": true,
+    "todo": false
   },
   {
     "id": "huemint",
@@ -53,7 +59,8 @@
     "url": "https://huemint.com",
     "category": { "fa": "طراحی", "en": "Design" },
     "note": { "fa": "ساخت پالت رنگ با هوش مصنوعی", "en": "AI color palette generator" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "css-grid-garden",
@@ -61,7 +68,8 @@
     "url": "https://cssgridgarden.com",
     "category": { "fa": "یادگیری", "en": "Learning" },
     "note": { "fa": "بازی برای یادگیری CSS Grid", "en": "Game for learning CSS Grid" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "flexbox-froggy",
@@ -69,7 +77,8 @@
     "url": "https://flexboxfroggy.com",
     "category": { "fa": "یادگیری", "en": "Learning" },
     "note": { "fa": "بازی برای یادگیری Flexbox", "en": "Game for learning Flexbox" },
-    "approved": true
+    "approved": true,
+    "todo": false
   },
   {
     "id": "undraw",
@@ -77,7 +86,8 @@
     "url": "https://undraw.co/illustrations",
     "category": { "fa": "طراحی", "en": "Design" },
     "note": { "fa": "تصویرسازی‌های SVG رایگان و قابل تغییر رنگ", "en": "Free open-source SVG illustrations" },
-    "approved": true
+    "approved": true,
+    "todo": false
   },
   {
     "id": "caveman",
@@ -85,7 +95,8 @@
     "url": "https://github.com/JuliusBrussee/caveman",
     "category": { "fa": "ایجنت و اسکیل هوش مصنوعی", "en": "AI agents & skills" },
     "note": { "fa": "کم کردن مصرف توکن با حرف زدن غارنشینی ایجنت", "en": "Skill that cuts tokens by making agents talk like a caveman" },
-    "approved": true
+    "approved": true,
+    "todo": false
   },
   {
     "id": "free-claude-code",
@@ -93,7 +104,8 @@
     "url": "https://github.com/Alishahryar1/free-claude-code",
     "category": { "fa": "ایجنت و اسکیل هوش مصنوعی", "en": "AI agents & skills" },
     "note": { "fa": "استفاده رایگان از Claude Code و ابزارهای مشابه", "en": "Use Claude Code and other agent harnesses for free" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "software-papers",
@@ -101,7 +113,8 @@
     "url": "https://github.com/facundoolano/software-papers",
     "category": { "fa": "یادگیری", "en": "Learning" },
     "note": { "fa": "فهرست مقاله‌های مهم برای مهندسان نرم‌افزار", "en": "Curated list of papers for software engineers" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "rendercv",
@@ -109,7 +122,8 @@
     "url": "https://github.com/rendercv/rendercv",
     "category": { "fa": "استارتاپ و کار", "en": "Startup & career" },
     "note": { "fa": "ساخت رزومه از فایل متنی", "en": "Resume builder for academics and engineers" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "faang-questions",
@@ -117,7 +131,8 @@
     "url": "https://github.com/ombharatiya/FAANG-Coding-Interview-Questions",
     "category": { "fa": "یادگیری", "en": "Learning" },
     "note": { "fa": "سؤال‌های کدنویسی مصاحبه‌های FAANG", "en": "Coding questions asked in FAANG interviews" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "shadcn-improve",
@@ -125,7 +140,8 @@
     "url": "https://github.com/shadcn/improve",
     "category": { "fa": "ایجنت و اسکیل هوش مصنوعی", "en": "AI agents & skills" },
     "note": { "fa": "بررسی کد با مدل قوی و نوشتن برنامه برای مدل‌های ارزان‌تر", "en": "Audit a codebase with a strong model, write plans for cheaper ones" },
-    "approved": true
+    "approved": true,
+    "todo": false
   },
   {
     "id": "codebase-memory-mcp",
@@ -133,7 +149,8 @@
     "url": "https://github.com/DeusData/codebase-memory-mcp",
     "category": { "fa": "ایجنت و اسکیل هوش مصنوعی", "en": "AI agents & skills" },
     "note": { "fa": "گراف دانش کد برای ایجنت‌ها از طریق MCP", "en": "Persistent code knowledge graph for agents via MCP" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "llm-council",
@@ -141,7 +158,8 @@
     "url": "https://github.com/karpathy/llm-council",
     "category": { "fa": "ایجنت و اسکیل هوش مصنوعی", "en": "AI agents & skills" },
     "note": { "fa": "چند مدل زبانی با هم به سؤال جواب می‌دهند", "en": "Several LLMs work together to answer a question" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "marketingskills",
@@ -149,7 +167,8 @@
     "url": "https://github.com/coreyhaines31/marketingskills",
     "category": { "fa": "ایجنت و اسکیل هوش مصنوعی", "en": "AI agents & skills" },
     "note": { "fa": "اسکیل‌های بازاریابی، سئو و کپی‌رایتینگ برای ایجنت‌ها", "en": "Marketing, SEO and copywriting skills for agents" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "mattpocock-skills",
@@ -157,7 +176,8 @@
     "url": "https://github.com/mattpocock/skills",
     "category": { "fa": "ایجنت و اسکیل هوش مصنوعی", "en": "AI agents & skills" },
     "note": { "fa": "اسکیل‌های ایجنت برای مهندسی نرم‌افزار", "en": "Agent skills for real engineers" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "jakubkrehel-skills",
@@ -165,7 +185,8 @@
     "url": "https://github.com/jakubkrehel/skills",
     "category": { "fa": "ایجنت و اسکیل هوش مصنوعی", "en": "AI agents & skills" },
     "note": { "fa": "اسکیل‌هایی برای ساخت رابط کاربری خوب", "en": "Agent skills for building great interfaces" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "agent-reach",
@@ -173,7 +194,8 @@
     "url": "https://github.com/Panniantong/agent-reach",
     "category": { "fa": "ایجنت و اسکیل هوش مصنوعی", "en": "AI agents & skills" },
     "note": { "fa": "خواندن و جستجوی توییتر، ردیت، یوتیوب و … برای ایجنت", "en": "Lets agents read and search Twitter, Reddit, YouTube and more" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "ponytail",
@@ -181,7 +203,8 @@
     "url": "https://github.com/dietrichgebert/ponytail",
     "category": { "fa": "ایجنت و اسکیل هوش مصنوعی", "en": "AI agents & skills" },
     "note": { "fa": "ایجنت مثل یک ارشد تنبل فکر کند: کد کمتر", "en": "Makes your agent write less code, like a lazy senior dev" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "brag",
@@ -189,7 +212,8 @@
     "url": "https://github.com/latent-spaces/brag",
     "category": { "fa": "ایجنت و اسکیل هوش مصنوعی", "en": "AI agents & skills" },
     "note": { "fa": "ساخت ویدئوی معرفی پروژه با یک دستور", "en": "Turn a project into a short launch video with one command" },
-    "approved": true
+    "approved": true,
+    "todo": false
   },
   {
     "id": "threejs-opus-video",
@@ -197,7 +221,8 @@
     "url": "https://www.youtube.com/watch?v=G-F5Qvy-7KM",
     "category": { "fa": "یادگیری", "en": "Learning" },
     "note": { "fa": "ویدئوی DesignCode درباره ساخت سایت Three.js با Claude", "en": "DesignCode video on building Three.js sites with Claude" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "officecli",
@@ -205,7 +230,8 @@
     "url": "https://github.com/iOfficeAI/OfficeCLI",
     "category": { "fa": "ابزار برنامه‌نویسی", "en": "Dev tools" },
     "note": { "fa": "خواندن و ویرایش Word، Excel و PowerPoint برای ایجنت‌ها", "en": "Word, Excel and PowerPoint automation for AI agents" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "taste-skill",
@@ -213,7 +239,8 @@
     "url": "https://github.com/leonxlnx/taste-skill",
     "category": { "fa": "ایجنت و اسکیل هوش مصنوعی", "en": "AI agents & skills" },
     "note": { "fa": "اسکیل سلیقه طراحی برای ایجنت‌های کدنویسی", "en": "Skills that give coding agents design taste" },
-    "approved": true
+    "approved": true,
+    "todo": false
   },
   {
     "id": "originkit",
@@ -221,7 +248,8 @@
     "url": "https://www.originkit.dev",
     "category": { "fa": "طراحی", "en": "Design" },
     "note": { "fa": "کتابخانه رایگان کامپوننت‌های انیمیشنی", "en": "Free animated component library" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "claude-skills-founder",
@@ -229,7 +257,8 @@
     "url": "https://github.com/emotixco/claude-skills-founder",
     "category": { "fa": "استارتاپ و کار", "en": "Startup & career" },
     "note": { "fa": "اسکیل‌های Claude برای بنیان‌گذاران استارتاپ", "en": "Claude Code skills for startup founders" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "remotion",
@@ -237,7 +266,8 @@
     "url": "https://github.com/remotion-dev/remotion",
     "category": { "fa": "ابزار برنامه‌نویسی", "en": "Dev tools" },
     "note": { "fa": "ساخت ویدئو با React", "en": "Make videos programmatically with React" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "gpui-kit",
@@ -245,7 +275,8 @@
     "url": "https://github.com/longbridge/gpui-kit",
     "category": { "fa": "ابزار برنامه‌نویسی", "en": "Dev tools" },
     "note": { "fa": "کامپوننت‌های رابط دسکتاپ با Rust و GPUI", "en": "Rust desktop UI components built on GPUI" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "impeccable",
@@ -253,7 +284,8 @@
     "url": "https://impeccable.style",
     "category": { "fa": "طراحی", "en": "Design" },
     "note": { "fa": "واژگان طراحی برای ایجنت‌ها", "en": "Design vocabulary for agents" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "raku-no-oto",
@@ -261,7 +293,8 @@
     "url": "https://amix-design.com/tl/tool-chill/",
     "category": { "fa": "متفرقه", "en": "Misc" },
     "note": { "fa": "میکسر صداهای محیطی برای تمرکز", "en": "Ambient sound mixer for focus" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "places-to-post-startup",
@@ -269,7 +302,8 @@
     "url": "https://github.com/mmccaff/PlacesToPostYourStartup",
     "category": { "fa": "استارتاپ و کار", "en": "Startup & career" },
     "note": { "fa": "جاهایی برای معرفی استارتاپ و یافتن کاربر", "en": "Where to post your startup to get beta users" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "cindyzhu-github-tricks",
@@ -277,7 +311,8 @@
     "url": "https://cindyzhu.com.au/guides/read-any-github-repo-without-opening-the-code",
     "category": { "fa": "یادگیری", "en": "Learning" },
     "note": { "fa": "خواندن هر ریپوی گیت‌هاب بدون باز کردن کد", "en": "Read any GitHub repo without opening the code" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "destroy-website",
@@ -285,7 +320,8 @@
     "url": "https://destroy.spritefusion.com",
     "category": { "fa": "متفرقه", "en": "Misc" },
     "note": { "fa": "هر سایتی را خراب کن، برای سرگرمی", "en": "Wreck any website, for fun" },
-    "approved": true
+    "approved": true,
+    "todo": false
   },
   {
     "id": "repowise",
@@ -293,7 +329,8 @@
     "url": "https://github.com/repowise-dev/repowise",
     "category": { "fa": "ابزار برنامه‌نویسی", "en": "Dev tools" },
     "note": { "fa": "سلامت کد، مستندات خودکار و کد مرده از طریق MCP", "en": "Code health, auto docs and dead-code detection via MCP" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "strapi",
@@ -301,7 +338,8 @@
     "url": "https://github.com/strapi/strapi",
     "category": { "fa": "ابزار برنامه‌نویسی", "en": "Dev tools" },
     "note": { "fa": "CMS هدلس متن‌باز", "en": "Open-source headless CMS" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "pstack",
@@ -309,7 +347,8 @@
     "url": "https://github.com/cursor/plugins/tree/main/pstack",
     "category": { "fa": "ایجنت و اسکیل هوش مصنوعی", "en": "AI agents & skills" },
     "note": { "fa": "اسکیل‌های poteto برای کد کمتر و باکیفیت‌تر در Cursor", "en": "poteto's Cursor skills for less but better code" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "rea",
@@ -317,7 +356,8 @@
     "url": "https://github.com/morluto/rea",
     "category": { "fa": "ایجنت و اسکیل هوش مصنوعی", "en": "AI agents & skills" },
     "note": { "fa": "مهندسی معکوس با ایجنت‌ها", "en": "Reverse engineer anything with agents" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "ai-job-search",
@@ -325,7 +365,8 @@
     "url": "https://github.com/ai-job-search-dev/ai-job-search",
     "category": { "fa": "استارتاپ و کار", "en": "Startup & career" },
     "note": { "fa": "جستجوی کار با Claude Code: رزومه، کاورلتر و مصاحبه", "en": "Job search on Claude Code: CVs, cover letters, interview prep" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "mirofish",
@@ -333,7 +374,8 @@
     "url": "https://github.com/666ghj/MiroFish",
     "category": { "fa": "ایجنت و اسکیل هوش مصنوعی", "en": "AI agents & skills" },
     "note": { "fa": "موتور هوش جمعی برای پیش‌بینی", "en": "Swarm intelligence engine for predictions" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "anatomy",
@@ -341,7 +383,8 @@
     "url": "https://github.com/wheresryan22/anatomy",
     "category": { "fa": "ایجنت و اسکیل هوش مصنوعی", "en": "AI agents & skills" },
     "note": { "fa": "اسکیل ساخت تصویرسازی ایزومتریک تعاملی از ماشین‌ها", "en": "Skill for interactive isometric illustrations of machines" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "skill-issue",
@@ -349,7 +392,8 @@
     "url": "https://skill-issue.in",
     "category": { "fa": "ایجنت و اسکیل هوش مصنوعی", "en": "AI agents & skills" },
     "note": { "fa": "کتابخانه اسکیل‌های ایجنت", "en": "Curated library of agent skills" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "pixel-agents",
@@ -357,7 +401,8 @@
     "url": "https://github.com/pixel-agents-hq/pixel-agents",
     "category": { "fa": "ایجنت و اسکیل هوش مصنوعی", "en": "AI agents & skills" },
     "note": { "fa": "دفتر پیکسلی برای ایجنت‌ها", "en": "Pixel office for your agents" },
-    "approved": true
+    "approved": true,
+    "todo": false
   },
   {
     "id": "video-use",
@@ -365,7 +410,8 @@
     "url": "https://github.com/browser-use/video-use",
     "category": { "fa": "ایجنت و اسکیل هوش مصنوعی", "en": "AI agents & skills" },
     "note": { "fa": "ویرایش ویدئو با ایجنت‌های کدنویسی", "en": "Edit videos with coding agents" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "reboot-cs",
@@ -373,7 +419,8 @@
     "url": "https://reboot-cs.netlify.app",
     "category": { "fa": "یادگیری", "en": "Learning" },
     "note": { "fa": "درس‌های اصلی مهندسی کامپیوتر با زبان ساده", "en": "Core computer engineering courses from scratch, in Farsi" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "gstack",
@@ -381,7 +428,8 @@
     "url": "https://github.com/garrytan/gstack",
     "category": { "fa": "ایجنت و اسکیل هوش مصنوعی", "en": "AI agents & skills" },
     "note": { "fa": "تنظیمات Claude Code گری تن با ۲۳ ابزار", "en": "Garry Tan's Claude Code setup with 23 tools" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "motionsites",
@@ -389,7 +437,8 @@
     "url": "https://motionsites.ai/?prompt=aetheris-voyage-hero",
     "category": { "fa": "طراحی", "en": "Design" },
     "note": { "fa": "پرامپت و الهام برای سایت‌های انیمیشنی", "en": "Prompts and inspiration for animated websites" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "cloudflare-security-audit",
@@ -397,7 +446,8 @@
     "url": "https://github.com/cloudflare/security-audit-skill",
     "category": { "fa": "ایجنت و اسکیل هوش مصنوعی", "en": "AI agents & skills" },
     "note": { "fa": "اسکیل ممیزی امنیتی چندمرحله‌ای از Cloudflare", "en": "Cloudflare's multi-phase security audit skill" },
-    "approved": false
+    "approved": false,
+    "todo": false
   },
   {
     "id": "cindyzhu-guides",
@@ -405,6 +455,7 @@
     "url": "https://cindyzhu.com.au/guides",
     "category": { "fa": "یادگیری", "en": "Learning" },
     "note": { "fa": "راهنماها و پرامپت‌های رایگان", "en": "Free prompt packs, setup guides and cheat sheets" },
-    "approved": false
+    "approved": false,
+    "todo": false
   }
 ]

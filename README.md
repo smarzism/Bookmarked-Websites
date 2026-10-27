@@ -9,7 +9,7 @@ A searchable bookmark board (Farsi / English) that shows each site's og:image, w
 4. Open the **Actions** tab and wait for "Deploy to GitHub Pages" to finish.
 
 ## Add a site
-Edit `sites.json`, add an object with a unique `id`, `name`, `url`, `category` and `note` (each with `fa` and `en`) and `approved` (`true` once you have tested the site; it gets a "Tested" badge and shows under the Tested filter), then commit. The workflow fetches the og:image and redeploys. It also refreshes images every Monday.
+Edit `sites.json`, add an object with a unique `id`, `name`, `url`, `category` and `note` (each with `fa` and `en`), `approved` (`true` once you have tested the site) and `todo` (`true` if you still want to test it). Each one adds a badge and has its own filter chip, then commit. The workflow fetches the og:image and redeploys. It also refreshes images every Monday.
 
 ## Notes
 - If a site has no og:image, the card shows a colored letter instead.
