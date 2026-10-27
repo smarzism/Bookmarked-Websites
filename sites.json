@@ -1,11 +1,11 @@
 [
-  {
-    "id": "kartdavat",
-    "name": "کارت‌دعوت",
-    "url": "https://kartdavat.com",
-    "category": { "fa": "پروژه‌های من", "en": "My projects" },
-    "note": { "fa": "دعوت‌نامه دیجیتال فارسی", "en": "Farsi digital invitations" }
-  },
+  // {
+  //   "id": "kartdavat",
+  //   "name": "کارت‌دعوت",
+  //   "url": "https://kartdavat.com",
+  //   "category": { "fa": "پروژه‌های من", "en": "My projects" },
+  //   "note": { "fa": "دعوت‌نامه دیجیتال فارسی", "en": "Farsi digital invitations" }
+  // },
   {
     "id": "foodplan",
     "name": "FoodPlan",

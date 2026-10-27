@@ -2,7 +2,7 @@
 // Runs in GitHub Actions (Node 20+, built-in fetch). A failure on one site never stops the rest.
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 
-const UA = "Mozilla/5.0 (compatible; GoodSitesBot/1.0)";
+const UA = "Mozilla/5.0 (compatible; BookmarksBot/1.0)";
 const EXT = { "image/jpeg": "jpg", "image/png": "png", "image/webp": "webp", "image/gif": "gif" };
 const MAX_BYTES = 3 * 1024 * 1024;
 
@@ -16,7 +16,9 @@ function findMeta(html, names) {
   return null;
 }
 
-const sites = JSON.parse(await readFile("sites.json", "utf8"));
+// Whole-line // comments are allowed in sites.json (same rule as index.html).
+const text = (await readFile("sites.json", "utf8")).replace(/^\s*\/\/.*$/gm, "").replace(/,(\s*[\]}])/g, "$1");
+const sites = JSON.parse(text);
 await mkdir("og", { recursive: true });
 const manifest = {};
 

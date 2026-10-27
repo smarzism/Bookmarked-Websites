@@ -1,6 +1,6 @@
-# My good sites
+# Bookmarked websites
 
-A clean, scrollable bookmark board (Farsi / English) that shows each site's og:image.
+A searchable bookmark board (Farsi / English) that shows each site's og:image, with category filters and shareable search links (`?q=...&c=...`).
 
 ## Setup (one time)
 1. Create a GitHub repo. Name it `YOUR-USERNAME.github.io` to get `https://YOUR-USERNAME.github.io` as the address, or any other name to get `https://YOUR-USERNAME.github.io/REPO-NAME/`.
