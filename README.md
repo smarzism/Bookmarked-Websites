@@ -4,7 +4,7 @@ A searchable bookmark board (Farsi / English) that shows each site's og:image, w
 
 ## Setup (one time)
 1. Create a GitHub repo. Name it `YOUR-USERNAME.github.io` to get `https://YOUR-USERNAME.github.io` as the address, or any other name to get `https://YOUR-USERNAME.github.io/REPO-NAME/`.
-2. Put these files in the repo root and push to `main`.
+2. Put these files in the repo root and push to `main` (or `master`).
 3. In the repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 4. Open the **Actions** tab and wait for "Deploy to GitHub Pages" to finish.
 
