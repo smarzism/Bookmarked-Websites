@@ -7,18 +7,25 @@
   //   "note": { "fa": "دعوت‌نامه دیجیتال فارسی", "en": "Farsi digital invitations" }
   // },
   {
+    "id": "InvCard",
+    "name": "کارت‌دعوت",
+    "url": "https://invcard.com",
+    "category": { "fa": "مراسم و دعوت", "en": "Events & invitations" },
+    "note": { "fa": "دعوت‌نامه دیجیتال فارسی", "en": "Farsi digital invitations" }
+  },
+  {
+    "id": "Coden",
+    "name": "Coden",
+    "url": "https://coden.ir",
+    "category": { "fa": "ابزار برنامه‌نویسی", "en": "Dev tools"  },
+    "note": { "fa": "ذخیره‌سازی و اشتراک‌گذاری کد", "en": "Code storage and sharing" }
+  },
+  {
     "id": "foodplan",
     "name": "FoodPlan",
     "url": "https://foodplanapp.com",
     "category": { "fa": "خانه و خانواده", "en": "Home & family" },
     "note": { "fa": "برنامه‌ریزی غذا و خرید خانواده", "en": "Family meal and shopping planner" }
-  },
-  {
-    "id": "mdn",
-    "name": "MDN Web Docs",
-    "url": "https://developer.mozilla.org",
-    "category": { "fa": "یادگیری", "en": "Learning" },
-    "note": { "fa": "نمونه، قابل حذف", "en": "Sample, delete me" }
   },
   {
     "id": "codesandbox",
