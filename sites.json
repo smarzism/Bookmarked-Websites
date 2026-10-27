@@ -1,0 +1,23 @@
+[
+  {
+    "id": "kartdavat",
+    "name": "کارت‌دعوت",
+    "url": "https://kartdavat.com",
+    "category": { "fa": "پروژه‌های من", "en": "My projects" },
+    "note": { "fa": "دعوت‌نامه دیجیتال فارسی", "en": "Farsi digital invitations" }
+  },
+  {
+    "id": "foodplan",
+    "name": "FoodPlan",
+    "url": "https://foodplanapp.com",
+    "category": { "fa": "پروژه‌های من", "en": "My projects" },
+    "note": { "fa": "برنامه‌ریزی غذا و خرید خانواده", "en": "Family meal and shopping planner" }
+  },
+  {
+    "id": "mdn",
+    "name": "MDN Web Docs",
+    "url": "https://developer.mozilla.org",
+    "category": { "fa": "یادگیری", "en": "Learning" },
+    "note": { "fa": "نمونه، قابل حذف", "en": "Sample, delete me" }
+  }
+]

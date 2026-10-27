@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سایت‌های خوب من</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef1f5;--surface:#fff;--ink:#17212b;--muted:#5d6b7a;--line:#d9e0e8;--accent:#0b6e8a;--accent-ink:#fff;--chip:#e2e8ef;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#10161d;--surface:#18212b;--ink:#e9eef4;--muted:#9aa9b9;--line:#26323f;--accent:#4cc3e0;--accent-ink:#06222b;--chip:#202c38;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Vazirmatn",Tahoma,"Segoe UI",system-ui,sans-serif;line-height:1.7}
+header{position:sticky;top:0;z-index:9;background:var(--bg);padding:14px 16px 10px;border-bottom:1px solid var(--line)}
+.wrap{max-width:720px;margin:0 auto}
+.top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+h1{font-size:22px;font-weight:800;margin:0}
+.count{font-size:13px;color:var(--muted);margin-inline-start:auto}
+.search{width:100%;margin-top:10px;padding:11px 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font:inherit;font-size:15px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;border:0;background:var(--chip);color:var(--ink);padding:6px 14px;border-radius:999px;font:inherit;font-size:13px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);font-weight:600}
+main{padding:14px 16px 60px}
+.list{display:flex;flex-direction:column;gap:12px}
+.card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;text-decoration:none;color:inherit}
+.card:hover{border-color:var(--accent)}
+.og{display:block;width:100%;aspect-ratio:1.91/1;object-fit:cover;background:var(--chip)}
+.row{display:flex;align-items:center;gap:14px;padding:12px 14px}
+.tile{flex:none;width:48px;height:48px;border-radius:10px;display:grid;place-items:center;font-weight:800;font-size:20px;color:#fff;font-family:system-ui,sans-serif}
+.info{min-width:0;flex:1}
+.name{font-weight:600;font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.host{font-size:12px;color:var(--muted);direction:ltr;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+:root[dir="rtl"] .host{text-align:right}
+.note{font-size:13px;color:var(--muted);margin-top:2px}
+.tag{font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:0 8px;flex:none}
+.empty{text-align:center;color:var(--muted);padding:40px 0}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="top"><h1 id="ttl"></h1><span class="count" id="count"></span><button class="chip" id="lang" type="button"></button></div>
+  <input class="search" id="q" type="search" aria-label="search">
+  <div class="chips" id="chips"></div>
+</div></header>
+<main><div class="wrap"><div class="list" id="list"></div></div></main>
+<script>
+var TX={fa:{ttl:"سایت‌های خوب من",q:"جستجو در سایت‌ها",all:"همه",sites:"سایت",none:"چیزی پیدا نشد. عبارت دیگری را امتحان کن.",other:"EN"},
+en:{ttl:"My good sites",q:"Search sites",all:"All",sites:"sites",none:"Nothing found. Try another search.",other:"فارسی"}};
+var lang="fa",items=[],og={},cat="",term="";
+try{lang=localStorage.getItem("good-sites-lang")||((navigator.language||"").indexOf("fa")===0?"fa":"en")}catch(e){}
+function T(k){return TX[lang][k]}
+function pick(o){return o?(o[lang]||o.fa||""):""}
+function host(u){try{return new URL(u).hostname.replace(/^www\./,"")}catch(e){return u}}
+function hue(s){var h=0;for(var i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))%360;return h}
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+function applyLang(){var d=document.documentElement;d.lang=lang;d.dir=lang==="fa"?"rtl":"ltr";
+  document.getElementById("ttl").textContent=T("ttl");document.getElementById("lang").textContent=T("other");
+  document.getElementById("q").placeholder=T("q");document.title=T("ttl")}
+function render(){
+  var cats=[];items.forEach(function(i){var c=pick(i.category);if(c&&cats.indexOf(c)<0)cats.push(c)});
+  if(cat&&cats.indexOf(cat)<0)cat="";
+  var ch=document.getElementById("chips");ch.textContent="";
+  [""].concat(cats).forEach(function(c){var b=el("button","chip",c||T("all"));b.type="button";b.setAttribute("aria-pressed",String(c===cat));b.onclick=function(){cat=c;render()};ch.appendChild(b)});
+  var t=term.trim().toLowerCase(),l=document.getElementById("list");l.textContent="";
+  var shown=items.filter(function(i){
+    if(cat&&pick(i.category)!==cat)return false;
+    return !t||(i.name+" "+i.url+" "+pick(i.category)+" "+pick(i.note)).toLowerCase().indexOf(t)>=0});
+  document.getElementById("count").textContent=shown.length+" "+T("sites");
+  if(!shown.length){l.appendChild(el("div","empty",T("none")));return}
+  shown.forEach(function(i){
+    var a=el("a","card");a.href=i.url;a.target="_blank";a.rel="noopener noreferrer";
+    if(og[i.id]){var im=el("img","og");im.src=og[i.id];im.alt="";im.loading="lazy";im.onerror=function(){im.remove()};a.appendChild(im)}
+    var r=el("div","row"),tile=el("div","tile",(i.name||"?").trim().charAt(0).toUpperCase());
+    tile.style.background="hsl("+hue(host(i.url))+",48%,40%)";
+    var info=el("div","info");info.appendChild(el("div","name",i.name));info.appendChild(el("div","host",host(i.url)));
+    if(pick(i.note))info.appendChild(el("div","note",pick(i.note)));
+    r.appendChild(tile);r.appendChild(info);
+    if(pick(i.category))r.appendChild(el("span","tag",pick(i.category)));
+    a.appendChild(r);l.appendChild(a)});
+}
+document.getElementById("q").oninput=function(e){term=e.target.value;render()};
+document.getElementById("lang").onclick=function(){lang=lang==="fa"?"en":"fa";try{localStorage.setItem("good-sites-lang",lang)}catch(e){}applyLang();render()};
+applyLang();
+Promise.all([fetch("sites.json").then(function(r){return r.json()}),fetch("og/manifest.json").then(function(r){return r.json()}).catch(function(){return {}})])
+ .then(function(v){items=v[0];og=v[1]||{};render()})
+ .catch(function(){document.getElementById("list").appendChild(el("div","empty","sites.json not found"))});
+</script>
+</body>
+</html>
