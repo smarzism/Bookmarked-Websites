@@ -13,8 +13,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" rel="stylesheet">
 <style>
-:root{--bg:#f3f5f8;--surface:#fff;--ink:#16202a;--muted:#566474;--line:#dde3ea;--accent:#0b6e8a;--accent-ink:#fff;--accent-soft:#e1f0f4;--chip:#e7ecf1;--shadow:0 1px 2px rgb(22 50 70/.06),0 8px 24px -12px rgb(22 50 70/.18);color-scheme:light}
-@media (prefers-color-scheme:dark){:root{--bg:#0f151c;--surface:#161f29;--ink:#e8eef4;--muted:#9babbb;--line:#253240;--accent:#4cc3e0;--accent-ink:#06222b;--accent-soft:#12303a;--chip:#1d2833;--shadow:0 1px 2px rgb(0 0 0/.3),0 10px 28px -14px rgb(0 0 0/.6);color-scheme:dark}}
+:root{--bg:#f3f5f8;--surface:#fff;--ink:#16202a;--muted:#566474;--line:#dde3ea;--accent:#0b6e8a;--accent-ink:#fff;--accent-soft:#e1f0f4;--chip:#e7ecf1;--ok:#1d7a45;--ok-soft:#e2f3e8;--shadow:0 1px 2px rgb(22 50 70/.06),0 8px 24px -12px rgb(22 50 70/.18);color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#0f151c;--surface:#161f29;--ink:#e8eef4;--muted:#9babbb;--line:#253240;--accent:#4cc3e0;--accent-ink:#06222b;--accent-soft:#12303a;--chip:#1d2833;--ok:#5fd394;--ok-soft:#133423;--shadow:0 1px 2px rgb(0 0 0/.3),0 10px 28px -14px rgb(0 0 0/.6);color-scheme:dark}}
 *{box-sizing:border-box}
 html{-webkit-tap-highlight-color:transparent}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Vazirmatn",Tahoma,"Segoe UI",system-ui,sans-serif;line-height:1.6;touch-action:manipulation}
@@ -54,6 +54,9 @@ h1{font-size:20px;font-weight:800;margin:0;text-wrap:balance;white-space:nowrap;
 .chip span{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
 .chip[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);font-weight:700}
 .chip[aria-pressed="true"] span{color:inherit;opacity:.8}
+.chip i{font-size:16px;color:var(--ok)}
+.chip[aria-pressed="true"] i{color:inherit}
+.sep{flex:none;width:1px;margin:6px 2px;background:var(--line)}
 
 main{padding-block:20px 72px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
@@ -75,8 +78,10 @@ main{padding-block:20px 72px}
 .host{font-size:12.5px;color:var(--muted);direction:ltr;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 [dir="rtl"] .host{text-align:right}
 .note{font-size:13.5px;color:var(--muted);margin:2px 0 0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.tag{align-self:flex-start;margin-top:auto;padding-top:10px}
-.tag span{display:inline-block;font-size:11.5px;color:var(--accent);background:var(--accent-soft);border-radius:999px;padding:2px 10px}
+.tag{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:10px}
+.tag span{display:inline-flex;align-items:center;gap:4px;font-size:11.5px;color:var(--accent);background:var(--accent-soft);border-radius:999px;padding:2px 10px}
+.tag .ok{color:var(--ok);background:var(--ok-soft);font-weight:500}
+.tag .ok i{font-size:13px}
 
 .sk{pointer-events:none;box-shadow:none}
 .sk .cover,.sk .bar{background:var(--chip)}
@@ -110,12 +115,12 @@ main{padding-block:20px 72px}
 </div></header>
 <main><div class="wrap"><div class="grid" id="list" tabindex="-1"></div></div></main>
 <script>
-var TX={fa:{ttl:"وب‌سایت‌های نشان‌شده",q:"جستجوی نام، آدرس یا توضیح…",all:"همه",site:"سایت",sites:"سایت",none:"چیزی پیدا نشد",noneHint:"عبارت دیگری را امتحان کن یا فیلترها را پاک کن.",reset:"پاک کردن فیلترها",clear:"پاک کردن جستجو",cats:"دسته‌ها",skip:"رفتن به فهرست",err:"فهرست سایت‌ها بارگذاری نشد",errHint:"فایل sites.json پیدا نشد یا خراب است.",emptyAll:"هنوز سایتی نشان نشده",emptyAllHint:"یک مورد به sites.json اضافه کن.",opens:"در زبانه جدید باز می‌شود",other:"English"},
-en:{ttl:"Bookmarked websites",q:"Search by name, address or note…",all:"All",site:"site",sites:"sites",none:"Nothing found",noneHint:"Try another search or clear the filters.",reset:"Clear filters",clear:"Clear search",cats:"Categories",skip:"Skip to list",err:"Could not load the list",errHint:"sites.json is missing or invalid.",emptyAll:"No bookmarks yet",emptyAllHint:"Add an entry to sites.json.",opens:"opens in a new tab",other:"فارسی"}};
-var LS="bookmarks-lang",lang="fa",items=null,og={},cat="",term="",failed=false;
+var TX={fa:{ttl:"وب‌سایت‌های نشان‌شده",q:"جستجوی نام، آدرس یا توضیح…",all:"همه",site:"سایت",sites:"سایت",none:"چیزی پیدا نشد",noneHint:"عبارت دیگری را امتحان کن یا فیلترها را پاک کن.",reset:"پاک کردن فیلترها",clear:"پاک کردن جستجو",cats:"دسته‌ها",skip:"رفتن به فهرست",err:"فهرست سایت‌ها بارگذاری نشد",errHint:"فایل sites.json پیدا نشد یا خراب است.",emptyAll:"هنوز سایتی نشان نشده",emptyAllHint:"یک مورد به sites.json اضافه کن.",opens:"در زبانه جدید باز می‌شود",tested:"تست‌شده",other:"English"},
+en:{ttl:"Bookmarked websites",q:"Search by name, address or note…",all:"All",site:"site",sites:"sites",none:"Nothing found",noneHint:"Try another search or clear the filters.",reset:"Clear filters",clear:"Clear search",cats:"Categories",skip:"Skip to list",err:"Could not load the list",errHint:"sites.json is missing or invalid.",emptyAll:"No bookmarks yet",emptyAllHint:"Add an entry to sites.json.",opens:"opens in a new tab",tested:"Tested",other:"فارسی"}};
+var LS="bookmarks-lang",lang="fa",items=null,og={},cat="",term="",ok=false,failed=false;
 try{lang=localStorage.getItem(LS)||localStorage.getItem("good-sites-lang")||((navigator.languages||[navigator.language||""]).some(function(l){return l.indexOf("fa")===0})?"fa":"en")}catch(e){}
 if(!TX[lang])lang="fa";
-(function(){var p=new URLSearchParams(location.search);term=p.get("q")||"";cat=p.get("c")||""})();
+(function(){var p=new URLSearchParams(location.search);term=p.get("q")||"";cat=p.get("c")||"";ok=p.get("t")==="1"})();
 var $=function(id){return document.getElementById(id)};
 function T(k){return TX[lang][k]}
 function pick(o,l){return o?(o[l||lang]||o.fa||o.en||""):""}
@@ -125,7 +130,7 @@ function host(u){try{return new URL(u).hostname.replace(/^www\./,"")}catch(e){re
 function hue(s){var h=0;for(var i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))%360;return h}
 function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
 function icon(n){var i=el("i","ph ph-"+n);i.setAttribute("aria-hidden","true");return i}
-function syncUrl(){var p=new URLSearchParams();if(term)p.set("q",term);if(cat)p.set("c",cat);var s=p.toString();history.replaceState(null,"",location.pathname+(s?"?"+s:""))}
+function syncUrl(){var p=new URLSearchParams();if(term)p.set("q",term);if(cat)p.set("c",cat);if(ok)p.set("t","1");var s=p.toString();history.replaceState(null,"",location.pathname+(s?"?"+s:""))}
 function applyLang(){var d=document.documentElement;d.lang=lang;d.dir=lang==="fa"?"rtl":"ltr";
   $("ttl").textContent=T("ttl");document.title=T("ttl");$("langTxt").textContent=T("other");
   $("lang").lang=lang==="fa"?"en":"fa";$("q").placeholder=T("q");$("qlabel").textContent=T("q");
@@ -145,7 +150,9 @@ function card(i){
   var bd=el("div","body"),nm=el("div","name",i.name);nm.translate=false;bd.appendChild(nm);
   var hs=el("div","host",h);hs.translate=false;bd.appendChild(hs);
   if(pick(i.note))bd.appendChild(el("p","note",pick(i.note)));
-  if(pick(i.category)){var tg=el("div","tag");tg.appendChild(el("span",null,pick(i.category)));bd.appendChild(tg)}
+  if(pick(i.category)||i.approved){var tg=el("div","tag");
+    if(i.approved){var b=el("span","ok",T("tested"));b.insertBefore(icon("seal-check"),b.firstChild);tg.appendChild(b)}
+    if(pick(i.category))tg.appendChild(el("span",null,pick(i.category)));bd.appendChild(tg)}
   a.appendChild(bd);return a}
 function render(){
   var l=$("list");l.textContent="";$("sbox").classList.toggle("has-q",!!term);
@@ -154,16 +161,20 @@ function render(){
   var cats=[],counts={};items.forEach(function(i){var k=catKey(i);if(!k)return;if(!counts[k]){counts[k]=0;cats.push(i)}counts[k]++});
   if(cat&&!counts[cat])cat="";
   var ch=$("chips");ch.textContent="";
+  var tc=items.filter(function(i){return i.approved}).length,tb=el("button","chip",T("tested"));tb.type="button";
+  tb.insertBefore(icon("seal-check"),tb.firstChild);tb.appendChild(el("span",null,num(tc)));tb.setAttribute("aria-pressed",String(ok));
+  tb.onclick=function(){ok=!ok;syncUrl();render()};ch.appendChild(tb);ch.appendChild(el("span","sep"));
   [null].concat(cats).forEach(function(i){var k=i?catKey(i):"",b=el("button","chip",i?pick(i.category):T("all"));b.type="button";
     b.appendChild(el("span",null,num(i?counts[k]:items.length)));b.setAttribute("aria-pressed",String(k===cat));
     b.onclick=function(){cat=k;syncUrl();render()};ch.appendChild(b)});
   var t=term.trim().toLowerCase();
   var shown=items.filter(function(i){
     if(cat&&catKey(i)!==cat)return false;
+    if(ok&&!i.approved)return false;
     return !t||[i.name,i.url,pick(i.category,"fa"),pick(i.category,"en"),pick(i.note,"fa"),pick(i.note,"en")].join(" ").toLowerCase().indexOf(t)>=0});
   $("count").textContent=num(shown.length)+" "+T(shown.length===1?"site":"sites");
   if(!items.length){emptyState("bookmark-simple",T("emptyAll"),T("emptyAllHint"));return}
-  if(!shown.length){emptyState("magnifying-glass",T("none"),T("noneHint"),function(){term="";cat="";$("q").value="";syncUrl();render();$("q").focus()});return}
+  if(!shown.length){emptyState("magnifying-glass",T("none"),T("noneHint"),function(){term="";cat="";ok=false;$("q").value="";syncUrl();render();$("q").focus()});return}
   shown.forEach(function(i){l.appendChild(card(i))});
 }
 $("q").value=term;
