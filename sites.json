@@ -457,5 +457,158 @@
     "note": { "fa": "راهنماها و پرامپت‌های رایگان", "en": "Free prompt packs, setup guides and cheat sheets" },
     "approved": false,
     "todo": false
+  },
+  {
+    "id": "duolingo-french-podcast",
+    "name": "Duolingo French Podcast",
+    "url": "https://podcast.duolingo.com/french",
+    "category": { "fa": "یادگیری", "en": "Learning" },
+    "note": { "fa": "پادکست فرانسوی دولینگو: داستان‌های واقعی برای تمرین شنیداری", "en": "Duolingo French podcast: true stories for listening practice" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "hydrology-academy",
+    "name": "Hydrology Academy",
+    "url": "https://hydrologyacademy.com",
+    "category": { "fa": "یادگیری", "en": "Learning" },
+    "note": { "fa": "پلتفرم تعاملی هیدرولوژی: مدل‌سازی حوضه آبریز و پیش‌بینی سیل", "en": "Interactive hydrology platform: watershed modeling and flood prediction" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "nomadic-tribe",
+    "name": "Nomadic Tribe",
+    "url": "https://2019.makemepulse.com",
+    "category": { "fa": "سه‌بعدی و وب خلاقانه", "en": "3D & creative web" },
+    "note": { "fa": "تجربه تعاملی WebGL از استودیو makemepulse", "en": "Interactive WebGL experience by the makemepulse studio" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "bruno-simon",
+    "name": "Bruno Simon",
+    "url": "https://bruno-simon.com",
+    "category": { "fa": "سه‌بعدی و وب خلاقانه", "en": "3D & creative web" },
+    "note": { "fa": "پورتفولیوی سه‌بعدی که با رانندگی یک ماشین گشت می‌زنی", "en": "3D portfolio you explore by driving a car" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "r3f-examples",
+    "name": "React Three Fiber examples",
+    "url": "https://r3f.docs.pmnd.rs/getting-started/examples",
+    "category": { "fa": "سه‌بعدی و وب خلاقانه", "en": "3D & creative web" },
+    "note": { "fa": "نمونه‌های React Three Fiber برای سه‌بعدی در React", "en": "Examples for React Three Fiber (3D in React)" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "liquid-glass-js",
+    "name": "Liquid Glass JS",
+    "url": "https://dashersw.github.io/liquid-glass-js/",
+    "category": { "fa": "سه‌بعدی و وب خلاقانه", "en": "3D & creative web" },
+    "note": { "fa": "کتابخانه افکت شیشه مایع به سبک اپل", "en": "Apple-style liquid glass effects library" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "shader-gradient",
+    "name": "Shader Gradient",
+    "url": "https://shadergradient.co/customize?animate=on&axesHelper=off&bgColor1=%23000000&bgColor2=%23000000&brightness=1.2&cAzimuthAngle=170&cDistance=4.4&cPolarAngle=70&cameraZoom=1&color1=%2394ffd1&color2=%236bf5ff&color3=%23ffffff&destination=onCanvas&embedMode=off&envPreset=city&format=gif&fov=45&frameRate=10&gizmoHelper=hide&grain=off&lightType=3d&pixelDensity=1&positionX=0&positionY=0.9&positionZ=-0.3&range=disabled&rangeEnd=40&rangeStart=0&reflection=0.1&rotationX=45&rotationY=0&rotationZ=0&shader=defaults&type=waterPlane&uAmplitude=0&uDensity=1.2&uFrequency=0&uSpeed=0.2&uStrength=3.4&uTime=0&wireframe=false",
+    "category": { "fa": "سه‌بعدی و وب خلاقانه", "en": "3D & creative web" },
+    "note": { "fa": "ساخت گرادیان سه‌بعدی متحرک برای پس‌زمینه", "en": "Animated 3D gradient generator for backgrounds" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "ligne-claire",
+    "name": "Ligne claire",
+    "url": "https://anikrisn.com/ligne-claire/",
+    "category": { "fa": "سه‌بعدی و وب خلاقانه", "en": "3D & creative web" },
+    "note": { "fa": "صحنه سه‌بعدی با Blender به سبک خط روشن هرژه", "en": "3D scene sketched with Blender in Hergé’s ligne claire style" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "claude-meet-claude",
+    "name": "Claude, meet Claude",
+    "url": "https://claude-meet-claude.gruberbuilds.com",
+    "category": { "fa": "سه‌بعدی و وب خلاقانه", "en": "3D & creative web" },
+    "note": { "fa": "قدم زدن در دنیای سه‌بعدی هشت نقاشی مونه", "en": "Step into 3D worlds painted from eight Monet paintings" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "little-prince-stars",
+    "name": "The Little Prince Among the Stars",
+    "url": "https://littleprince.dev",
+    "category": { "fa": "سه‌بعدی و وب خلاقانه", "en": "3D & creative web" },
+    "note": { "fa": "بازی مرورگری بر اساس شازده کوچولو (فقط دسکتاپ)", "en": "Browser game based on The Little Prince (desktop only)" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "sketchfab-terrarium",
+    "name": "Sketchfab terrarium",
+    "url": "https://sketchfab.com/3d-models/terrarium-game-ready-20330592fe534d1c92b53e7af38b2eba",
+    "category": { "fa": "سه‌بعدی و وب خلاقانه", "en": "3D & creative web" },
+    "note": { "fa": "مدل سه‌بعدی تراریوم آماده بازی در Sketchfab", "en": "Game-ready terrarium 3D model on Sketchfab" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "cgtrader-bonsai-terrarium",
+    "name": "Bonsai terrarium",
+    "url": "https://www.cgtrader.com/3d-models/plant/other/bonsai-terrarium",
+    "category": { "fa": "سه‌بعدی و وب خلاقانه", "en": "3D & creative web" },
+    "note": { "fa": "مدل سه‌بعدی تراریوم بونسای در CGTrader", "en": "Bonsai terrarium 3D model on CGTrader" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "storymapjs",
+    "name": "StoryMapJS",
+    "url": "https://storymap.knightlab.com",
+    "category": { "fa": "طراحی", "en": "Design" },
+    "note": { "fa": "روایت داستان با نقشه و اسلاید (Knight Lab)", "en": "Tell stories with maps and slides (Knight Lab)" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "freesvg-black-pepper",
+    "name": "FreeSVG",
+    "url": "https://freesvg.org/vector-graphics-of-black-pepper-on-a-pile",
+    "category": { "fa": "طراحی", "en": "Design" },
+    "note": { "fa": "وکتورهای SVG رایگان (وکتور فلفل سیاه)", "en": "Free SVG vectors (black pepper vector)" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "gabikora",
+    "name": "GABIKORA",
+    "url": "https://amix-design.com/tl/tool-gabikora/",
+    "category": { "fa": "طراحی", "en": "Design" },
+    "note": { "fa": "سازنده کلاژ به سبک Y2K در مرورگر (AMIX)", "en": "Y2K-style collage maker in the browser (AMIX)" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "amix-relationship-chart",
+    "name": "Triangle Relationship Generator",
+    "url": "https://amix-design.com/tl/tool-dia/",
+    "category": { "fa": "طراحی", "en": "Design" },
+    "note": { "fa": "ساخت نمودار رابطه و همبستگی (AMIX)", "en": "Make relationship and correlation diagrams (AMIX)" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "numberbox",
+    "name": "NumberBox",
+    "url": "https://numberbox.kokabi.workers.dev",
+    "category": { "fa": "متفرقه", "en": "Misc" },
+    "note": { "fa": "دیدن نام‌هایی که دیگران برای یک شماره ذخیره کرده‌اند", "en": "Look up the names others saved for a phone number" },
+    "approved": false,
+    "todo": false
   }
 ]

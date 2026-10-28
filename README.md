@@ -5,7 +5,7 @@ A bilingual (Farsi / English) list of websites I have bookmarked: dev tools, des
 **Live board:** https://smarzism.github.io/Bookmarked-Websites/ (searchable, with category filters, og:image previews and shareable search links `?q=...&c=...`).
 
 <!-- BEGIN stats -->
-**50** sites in **8** categories · **13** tested · **0** to test
+**67** sites in **9** categories · **13** tested · **0** to test
 <!-- END stats -->
 
 > The tables below are generated from [`sites.json`](sites.json) by [`scripts/build-readme.mjs`](scripts/build-readme.mjs). Don't edit them by hand: edit `sites.json` and the README updates itself.
@@ -19,13 +19,14 @@ A bilingual (Farsi / English) list of websites I have bookmarked: dev tools, des
 - [Sites](#sites)
 <!-- BEGIN toc -->
   - [AI agents & skills · ایجنت و اسکیل هوش مصنوعی](#ai-agents--skills) (21)
-  - [Learning · یادگیری](#learning) (8)
+  - [Learning · یادگیری](#learning) (10)
   - [Startup & career · استارتاپ و کار](#startup--career) (4)
   - [Dev tools · ابزار برنامه‌نویسی](#dev-tools) (8)
   - [Events & invitations · مراسم و دعوت](#events--invitations) (1)
   - [Home & family · خانه و خانواده](#home--family) (1)
-  - [Design · طراحی](#design) (5)
-  - [Misc · متفرقه](#misc) (2)
+  - [Design · طراحی](#design) (9)
+  - [Misc · متفرقه](#misc) (3)
+  - [3D & creative web · سه‌بعدی و وب خلاقانه](#3d--creative-web) (10)
 <!-- END toc -->
 - [Add a site](#add-a-site)
 - [Setup](#setup)
@@ -94,6 +95,8 @@ GitHub repositories come first. Categories appear in the same order as on the li
 | [GitHub repo tricks](https://cindyzhu.com.au/guides/read-any-github-repo-without-opening-the-code) | Read any GitHub repo without opening the code | خواندن هر ریپوی گیت‌هاب بدون باز کردن کد |  |
 | [مهندسی کامپیوتر، از اول](https://reboot-cs.netlify.app) | Core computer engineering courses from scratch, in Farsi | درس‌های اصلی مهندسی کامپیوتر با زبان ساده |  |
 | [Cindy Zhu guides](https://cindyzhu.com.au/guides) | Free prompt packs, setup guides and cheat sheets | راهنماها و پرامپت‌های رایگان |  |
+| [Duolingo French Podcast](https://podcast.duolingo.com/french) | Duolingo French podcast: true stories for listening practice | پادکست فرانسوی دولینگو: داستان‌های واقعی برای تمرین شنیداری |  |
+| [Hydrology Academy](https://hydrologyacademy.com) | Interactive hydrology platform: watershed modeling and flood prediction | پلتفرم تعاملی هیدرولوژی: مدل‌سازی حوضه آبریز و پیش‌بینی سیل |  |
 
 ### Startup & career
 
@@ -148,6 +151,10 @@ GitHub repositories come first. Categories appear in the same order as on the li
 | [Originkit](https://www.originkit.dev) | Free animated component library | کتابخانه رایگان کامپوننت‌های انیمیشنی |  |
 | [Impeccable](https://impeccable.style) | Design vocabulary for agents | واژگان طراحی برای ایجنت‌ها |  |
 | [MotionSites](https://motionsites.ai/?prompt=aetheris-voyage-hero) | Prompts and inspiration for animated websites | پرامپت و الهام برای سایت‌های انیمیشنی |  |
+| [StoryMapJS](https://storymap.knightlab.com) | Tell stories with maps and slides (Knight Lab) | روایت داستان با نقشه و اسلاید (Knight Lab) |  |
+| [FreeSVG](https://freesvg.org/vector-graphics-of-black-pepper-on-a-pile) | Free SVG vectors (black pepper vector) | وکتورهای SVG رایگان (وکتور فلفل سیاه) |  |
+| [GABIKORA](https://amix-design.com/tl/tool-gabikora/) | Y2K-style collage maker in the browser (AMIX) | سازنده کلاژ به سبک Y2K در مرورگر (AMIX) |  |
+| [Triangle Relationship Generator](https://amix-design.com/tl/tool-dia/) | Make relationship and correlation diagrams (AMIX) | ساخت نمودار رابطه و همبستگی (AMIX) |  |
 
 ### Misc
 
@@ -157,6 +164,24 @@ GitHub repositories come first. Categories appear in the same order as on the li
 | --- | --- | --- | --- |
 | [Raku no Oto](https://amix-design.com/tl/tool-chill/) | Ambient sound mixer for focus | میکسر صداهای محیطی برای تمرکز |  |
 | [Destroy Any Website](https://destroy.spritefusion.com) | Wreck any website, for fun | هر سایتی را خراب کن، برای سرگرمی | ✅ Tested |
+| [NumberBox](https://numberbox.kokabi.workers.dev) | Look up the names others saved for a phone number | دیدن نام‌هایی که دیگران برای یک شماره ذخیره کرده‌اند |  |
+
+### 3D & creative web
+
+سه‌بعدی و وب خلاقانه
+
+| Site | Note | توضیح | Status |
+| --- | --- | --- | --- |
+| [Nomadic Tribe](https://2019.makemepulse.com) | Interactive WebGL experience by the makemepulse studio | تجربه تعاملی WebGL از استودیو makemepulse |  |
+| [Bruno Simon](https://bruno-simon.com) | 3D portfolio you explore by driving a car | پورتفولیوی سه‌بعدی که با رانندگی یک ماشین گشت می‌زنی |  |
+| [React Three Fiber examples](https://r3f.docs.pmnd.rs/getting-started/examples) | Examples for React Three Fiber (3D in React) | نمونه‌های React Three Fiber برای سه‌بعدی در React |  |
+| [Liquid Glass JS](https://dashersw.github.io/liquid-glass-js/) | Apple-style liquid glass effects library | کتابخانه افکت شیشه مایع به سبک اپل |  |
+| [Shader Gradient](https://shadergradient.co/customize?animate=on&axesHelper=off&bgColor1=%23000000&bgColor2=%23000000&brightness=1.2&cAzimuthAngle=170&cDistance=4.4&cPolarAngle=70&cameraZoom=1&color1=%2394ffd1&color2=%236bf5ff&color3=%23ffffff&destination=onCanvas&embedMode=off&envPreset=city&format=gif&fov=45&frameRate=10&gizmoHelper=hide&grain=off&lightType=3d&pixelDensity=1&positionX=0&positionY=0.9&positionZ=-0.3&range=disabled&rangeEnd=40&rangeStart=0&reflection=0.1&rotationX=45&rotationY=0&rotationZ=0&shader=defaults&type=waterPlane&uAmplitude=0&uDensity=1.2&uFrequency=0&uSpeed=0.2&uStrength=3.4&uTime=0&wireframe=false) | Animated 3D gradient generator for backgrounds | ساخت گرادیان سه‌بعدی متحرک برای پس‌زمینه |  |
+| [Ligne claire](https://anikrisn.com/ligne-claire/) | 3D scene sketched with Blender in Hergé’s ligne claire style | صحنه سه‌بعدی با Blender به سبک خط روشن هرژه |  |
+| [Claude, meet Claude](https://claude-meet-claude.gruberbuilds.com) | Step into 3D worlds painted from eight Monet paintings | قدم زدن در دنیای سه‌بعدی هشت نقاشی مونه |  |
+| [The Little Prince Among the Stars](https://littleprince.dev) | Browser game based on The Little Prince (desktop only) | بازی مرورگری بر اساس شازده کوچولو (فقط دسکتاپ) |  |
+| [Sketchfab terrarium](https://sketchfab.com/3d-models/terrarium-game-ready-20330592fe534d1c92b53e7af38b2eba) | Game-ready terrarium 3D model on Sketchfab | مدل سه‌بعدی تراریوم آماده بازی در Sketchfab |  |
+| [Bonsai terrarium](https://www.cgtrader.com/3d-models/plant/other/bonsai-terrarium) | Bonsai terrarium 3D model on CGTrader | مدل سه‌بعدی تراریوم بونسای در CGTrader |  |
 <!-- END sites -->
 
 ## Add a site
