@@ -9,87 +9,6 @@
   //   "todo": false
   // },
   {
-    "id": "InvCard",
-    "name": "کارت‌دعوت",
-    "url": "https://invcard.com",
-    "category": { "fa": "مراسم و دعوت", "en": "Events & invitations" },
-    "note": { "fa": "دعوت‌نامه دیجیتال فارسی", "en": "Farsi digital invitations" },
-    "approved": true,
-    "todo": false
-  },
-  {
-    "id": "Coden",
-    "name": "Coden",
-    "url": "https://coden.ir",
-    "category": { "fa": "ابزار برنامه‌نویسی", "en": "Dev tools"  },
-    "note": { "fa": "ذخیره‌سازی و اشتراک‌گذاری کد", "en": "Code storage and sharing" },
-    "approved": true,
-    "todo": false
-  },
-  {
-    "id": "foodplan",
-    "name": "FoodPlan",
-    "url": "https://foodplanapp.com",
-    "category": { "fa": "خانه و خانواده", "en": "Home & family" },
-    "note": { "fa": "برنامه‌ریزی غذا و خرید خانواده", "en": "Family meal and shopping planner" },
-    "approved": true,
-    "todo": false
-  },
-  {
-    "id": "codesandbox",
-    "name": "CodeSandbox",
-    "url": "https://codesandbox.io",
-    "category": { "fa": "ابزار برنامه‌نویسی", "en": "Dev tools" },
-    "note": { "fa": "محیط کدنویسی آنلاین در مرورگر", "en": "Online code editor and sandboxes in the browser" },
-    "approved": true,
-    "todo": false
-  },
-  {
-    "id": "codepen",
-    "name": "CodePen",
-    "url": "https://codepen.io",
-    "category": { "fa": "ابزار برنامه‌نویسی", "en": "Dev tools" },
-    "note": { "fa": "زمین بازی HTML، CSS و JS", "en": "HTML, CSS and JS playground" },
-    "approved": true,
-    "todo": false
-  },
-  {
-    "id": "huemint",
-    "name": "Huemint",
-    "url": "https://huemint.com",
-    "category": { "fa": "طراحی", "en": "Design" },
-    "note": { "fa": "ساخت پالت رنگ با هوش مصنوعی", "en": "AI color palette generator" },
-    "approved": false,
-    "todo": false
-  },
-  {
-    "id": "css-grid-garden",
-    "name": "CSS Grid Garden",
-    "url": "https://cssgridgarden.com",
-    "category": { "fa": "یادگیری", "en": "Learning" },
-    "note": { "fa": "بازی برای یادگیری CSS Grid", "en": "Game for learning CSS Grid" },
-    "approved": false,
-    "todo": false
-  },
-  {
-    "id": "flexbox-froggy",
-    "name": "Flexbox Froggy",
-    "url": "https://flexboxfroggy.com",
-    "category": { "fa": "یادگیری", "en": "Learning" },
-    "note": { "fa": "بازی برای یادگیری Flexbox", "en": "Game for learning Flexbox" },
-    "approved": true,
-    "todo": false
-  },
-  {
-    "id": "undraw",
-    "name": "unDraw",
-    "url": "https://undraw.co/illustrations",
-    "category": { "fa": "طراحی", "en": "Design" },
-    "note": { "fa": "تصویرسازی‌های SVG رایگان و قابل تغییر رنگ", "en": "Free open-source SVG illustrations" },
-    "approved": true,
-    "todo": false
-  },
-  {
     "id": "caveman",
     "name": "caveman",
     "url": "https://github.com/JuliusBrussee/caveman",
@@ -216,15 +135,6 @@
     "todo": false
   },
   {
-    "id": "threejs-opus-video",
-    "name": "How I build Three.js websites with Claude",
-    "url": "https://www.youtube.com/watch?v=G-F5Qvy-7KM",
-    "category": { "fa": "یادگیری", "en": "Learning" },
-    "note": { "fa": "ویدئوی DesignCode درباره ساخت سایت Three.js با Claude", "en": "DesignCode video on building Three.js sites with Claude" },
-    "approved": false,
-    "todo": false
-  },
-  {
     "id": "officecli",
     "name": "OfficeCLI",
     "url": "https://github.com/iOfficeAI/OfficeCLI",
@@ -240,15 +150,6 @@
     "category": { "fa": "ایجنت و اسکیل هوش مصنوعی", "en": "AI agents & skills" },
     "note": { "fa": "اسکیل سلیقه طراحی برای ایجنت‌های کدنویسی", "en": "Skills that give coding agents design taste" },
     "approved": true,
-    "todo": false
-  },
-  {
-    "id": "originkit",
-    "name": "Originkit",
-    "url": "https://www.originkit.dev",
-    "category": { "fa": "طراحی", "en": "Design" },
-    "note": { "fa": "کتابخانه رایگان کامپوننت‌های انیمیشنی", "en": "Free animated component library" },
-    "approved": false,
     "todo": false
   },
   {
@@ -279,48 +180,12 @@
     "todo": false
   },
   {
-    "id": "impeccable",
-    "name": "Impeccable",
-    "url": "https://impeccable.style",
-    "category": { "fa": "طراحی", "en": "Design" },
-    "note": { "fa": "واژگان طراحی برای ایجنت‌ها", "en": "Design vocabulary for agents" },
-    "approved": false,
-    "todo": false
-  },
-  {
-    "id": "raku-no-oto",
-    "name": "Raku no Oto",
-    "url": "https://amix-design.com/tl/tool-chill/",
-    "category": { "fa": "متفرقه", "en": "Misc" },
-    "note": { "fa": "میکسر صداهای محیطی برای تمرکز", "en": "Ambient sound mixer for focus" },
-    "approved": false,
-    "todo": false
-  },
-  {
     "id": "places-to-post-startup",
     "name": "Places to post your startup",
     "url": "https://github.com/mmccaff/PlacesToPostYourStartup",
     "category": { "fa": "استارتاپ و کار", "en": "Startup & career" },
     "note": { "fa": "جاهایی برای معرفی استارتاپ و یافتن کاربر", "en": "Where to post your startup to get beta users" },
     "approved": false,
-    "todo": false
-  },
-  {
-    "id": "cindyzhu-github-tricks",
-    "name": "GitHub repo tricks",
-    "url": "https://cindyzhu.com.au/guides/read-any-github-repo-without-opening-the-code",
-    "category": { "fa": "یادگیری", "en": "Learning" },
-    "note": { "fa": "خواندن هر ریپوی گیت‌هاب بدون باز کردن کد", "en": "Read any GitHub repo without opening the code" },
-    "approved": false,
-    "todo": false
-  },
-  {
-    "id": "destroy-website",
-    "name": "Destroy Any Website",
-    "url": "https://destroy.spritefusion.com",
-    "category": { "fa": "متفرقه", "en": "Misc" },
-    "note": { "fa": "هر سایتی را خراب کن، برای سرگرمی", "en": "Wreck any website, for fun" },
-    "approved": true,
     "todo": false
   },
   {
@@ -387,15 +252,6 @@
     "todo": false
   },
   {
-    "id": "skill-issue",
-    "name": "Skill Issue",
-    "url": "https://skill-issue.in",
-    "category": { "fa": "ایجنت و اسکیل هوش مصنوعی", "en": "AI agents & skills" },
-    "note": { "fa": "کتابخانه اسکیل‌های ایجنت", "en": "Curated library of agent skills" },
-    "approved": false,
-    "todo": false
-  },
-  {
     "id": "pixel-agents",
     "name": "Pixel Agents",
     "url": "https://github.com/pixel-agents-hq/pixel-agents",
@@ -414,15 +270,6 @@
     "todo": false
   },
   {
-    "id": "reboot-cs",
-    "name": "مهندسی کامپیوتر، از اول",
-    "url": "https://reboot-cs.netlify.app",
-    "category": { "fa": "یادگیری", "en": "Learning" },
-    "note": { "fa": "درس‌های اصلی مهندسی کامپیوتر با زبان ساده", "en": "Core computer engineering courses from scratch, in Farsi" },
-    "approved": false,
-    "todo": false
-  },
-  {
     "id": "gstack",
     "name": "gstack",
     "url": "https://github.com/garrytan/gstack",
@@ -432,20 +279,173 @@
     "todo": false
   },
   {
-    "id": "motionsites",
-    "name": "MotionSites",
-    "url": "https://motionsites.ai/?prompt=aetheris-voyage-hero",
-    "category": { "fa": "طراحی", "en": "Design" },
-    "note": { "fa": "پرامپت و الهام برای سایت‌های انیمیشنی", "en": "Prompts and inspiration for animated websites" },
-    "approved": false,
-    "todo": false
-  },
-  {
     "id": "cloudflare-security-audit",
     "name": "Security audit skill",
     "url": "https://github.com/cloudflare/security-audit-skill",
     "category": { "fa": "ایجنت و اسکیل هوش مصنوعی", "en": "AI agents & skills" },
     "note": { "fa": "اسکیل ممیزی امنیتی چندمرحله‌ای از Cloudflare", "en": "Cloudflare's multi-phase security audit skill" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "InvCard",
+    "name": "کارت‌دعوت",
+    "url": "https://invcard.com",
+    "category": { "fa": "مراسم و دعوت", "en": "Events & invitations" },
+    "note": { "fa": "دعوت‌نامه دیجیتال فارسی", "en": "Farsi digital invitations" },
+    "approved": true,
+    "todo": false
+  },
+  {
+    "id": "Coden",
+    "name": "Coden",
+    "url": "https://coden.ir",
+    "category": { "fa": "ابزار برنامه‌نویسی", "en": "Dev tools"  },
+    "note": { "fa": "ذخیره‌سازی و اشتراک‌گذاری کد", "en": "Code storage and sharing" },
+    "approved": true,
+    "todo": false
+  },
+  {
+    "id": "foodplan",
+    "name": "FoodPlan",
+    "url": "https://foodplanapp.com",
+    "category": { "fa": "خانه و خانواده", "en": "Home & family" },
+    "note": { "fa": "برنامه‌ریزی غذا و خرید خانواده", "en": "Family meal and shopping planner" },
+    "approved": true,
+    "todo": false
+  },
+  {
+    "id": "codesandbox",
+    "name": "CodeSandbox",
+    "url": "https://codesandbox.io",
+    "category": { "fa": "ابزار برنامه‌نویسی", "en": "Dev tools" },
+    "note": { "fa": "محیط کدنویسی آنلاین در مرورگر", "en": "Online code editor and sandboxes in the browser" },
+    "approved": true,
+    "todo": false
+  },
+  {
+    "id": "codepen",
+    "name": "CodePen",
+    "url": "https://codepen.io",
+    "category": { "fa": "ابزار برنامه‌نویسی", "en": "Dev tools" },
+    "note": { "fa": "زمین بازی HTML، CSS و JS", "en": "HTML, CSS and JS playground" },
+    "approved": true,
+    "todo": false
+  },
+  {
+    "id": "huemint",
+    "name": "Huemint",
+    "url": "https://huemint.com",
+    "category": { "fa": "طراحی", "en": "Design" },
+    "note": { "fa": "ساخت پالت رنگ با هوش مصنوعی", "en": "AI color palette generator" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "css-grid-garden",
+    "name": "CSS Grid Garden",
+    "url": "https://cssgridgarden.com",
+    "category": { "fa": "یادگیری", "en": "Learning" },
+    "note": { "fa": "بازی برای یادگیری CSS Grid", "en": "Game for learning CSS Grid" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "flexbox-froggy",
+    "name": "Flexbox Froggy",
+    "url": "https://flexboxfroggy.com",
+    "category": { "fa": "یادگیری", "en": "Learning" },
+    "note": { "fa": "بازی برای یادگیری Flexbox", "en": "Game for learning Flexbox" },
+    "approved": true,
+    "todo": false
+  },
+  {
+    "id": "undraw",
+    "name": "unDraw",
+    "url": "https://undraw.co/illustrations",
+    "category": { "fa": "طراحی", "en": "Design" },
+    "note": { "fa": "تصویرسازی‌های SVG رایگان و قابل تغییر رنگ", "en": "Free open-source SVG illustrations" },
+    "approved": true,
+    "todo": false
+  },
+  {
+    "id": "threejs-opus-video",
+    "name": "How I build Three.js websites with Claude",
+    "url": "https://www.youtube.com/watch?v=G-F5Qvy-7KM",
+    "category": { "fa": "یادگیری", "en": "Learning" },
+    "note": { "fa": "ویدئوی DesignCode درباره ساخت سایت Three.js با Claude", "en": "DesignCode video on building Three.js sites with Claude" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "originkit",
+    "name": "Originkit",
+    "url": "https://www.originkit.dev",
+    "category": { "fa": "طراحی", "en": "Design" },
+    "note": { "fa": "کتابخانه رایگان کامپوننت‌های انیمیشنی", "en": "Free animated component library" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "impeccable",
+    "name": "Impeccable",
+    "url": "https://impeccable.style",
+    "category": { "fa": "طراحی", "en": "Design" },
+    "note": { "fa": "واژگان طراحی برای ایجنت‌ها", "en": "Design vocabulary for agents" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "raku-no-oto",
+    "name": "Raku no Oto",
+    "url": "https://amix-design.com/tl/tool-chill/",
+    "category": { "fa": "متفرقه", "en": "Misc" },
+    "note": { "fa": "میکسر صداهای محیطی برای تمرکز", "en": "Ambient sound mixer for focus" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "cindyzhu-github-tricks",
+    "name": "GitHub repo tricks",
+    "url": "https://cindyzhu.com.au/guides/read-any-github-repo-without-opening-the-code",
+    "category": { "fa": "یادگیری", "en": "Learning" },
+    "note": { "fa": "خواندن هر ریپوی گیت‌هاب بدون باز کردن کد", "en": "Read any GitHub repo without opening the code" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "destroy-website",
+    "name": "Destroy Any Website",
+    "url": "https://destroy.spritefusion.com",
+    "category": { "fa": "متفرقه", "en": "Misc" },
+    "note": { "fa": "هر سایتی را خراب کن، برای سرگرمی", "en": "Wreck any website, for fun" },
+    "approved": true,
+    "todo": false
+  },
+  {
+    "id": "skill-issue",
+    "name": "Skill Issue",
+    "url": "https://skill-issue.in",
+    "category": { "fa": "ایجنت و اسکیل هوش مصنوعی", "en": "AI agents & skills" },
+    "note": { "fa": "کتابخانه اسکیل‌های ایجنت", "en": "Curated library of agent skills" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "reboot-cs",
+    "name": "مهندسی کامپیوتر، از اول",
+    "url": "https://reboot-cs.netlify.app",
+    "category": { "fa": "یادگیری", "en": "Learning" },
+    "note": { "fa": "درس‌های اصلی مهندسی کامپیوتر با زبان ساده", "en": "Core computer engineering courses from scratch, in Farsi" },
+    "approved": false,
+    "todo": false
+  },
+  {
+    "id": "motionsites",
+    "name": "MotionSites",
+    "url": "https://motionsites.ai/?prompt=aetheris-voyage-hero",
+    "category": { "fa": "طراحی", "en": "Design" },
+    "note": { "fa": "پرامپت و الهام برای سایت‌های انیمیشنی", "en": "Prompts and inspiration for animated websites" },
     "approved": false,
     "todo": false
   },
